@@ -1,2 +1,2 @@
 # Annapoorna.api
-API services for Annapoorna Applicartion
+API services for Annapoorna Application
