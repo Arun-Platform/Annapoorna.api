@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\Annapurnaworld.api.props" />
+</Project>

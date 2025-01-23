@@ -1,0 +1,202 @@
+[
+  {
+    "ContainingType": "Annapurnaworld.api.Controllers.AccountController",
+    "Method": "AddUser",
+    "RelativePath": "api/accounts/AddUser",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "Annapurnaworld.entity.LoginRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Annapurnaworld.api.Controllers.AccountController",
+    "Method": "GetAllUsers",
+    "RelativePath": "api/accounts/GetAllUsers",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Annapurnaworld.api.Controllers.AccountController",
+    "Method": "Login",
+    "RelativePath": "api/accounts/login",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "Annapurnaworld.entity.LoginRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Annapurnaworld.api.Controllers.AccountController",
+    "Method": "ResetPassword",
+    "RelativePath": "api/accounts/ResetPassword",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "Annapurnaworld.entity.LoginRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Annapurnaworld.api.Controllers.CourierDeliveryHubController",
+    "Method": "DownloadZip",
+    "RelativePath": "api/courierDeliveryhubs/download-zip",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "fileType",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "fromDate",
+        "Type": "System.DateTime",
+        "IsRequired": false
+      },
+      {
+        "Name": "toDate",
+        "Type": "System.DateTime",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Annapurnaworld.api.Controllers.CourierDeliveryHubController",
+    "Method": "GetPackageShipmentDetails",
+    "RelativePath": "api/courierDeliveryhubs/GetPackageShipmentDetails",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Annapurnaworld.api.Controllers.CourierDeliveryHubController",
+    "Method": "GetPackageShipmentDetailsByAgentWithShipmentStatus",
+    "RelativePath": "api/courierDeliveryhubs/GetPackageShipmentDetailsByAgentWithShipmentStatus",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dateRange",
+        "Type": "System.DateTime",
+        "IsRequired": false
+      },
+      {
+        "Name": "deliveryHubName",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Annapurnaworld.api.Controllers.CourierDeliveryHubController",
+    "Method": "GetShippmentTotalCountBasedOnDateAndRunsheetAndStatusDelivered",
+    "RelativePath": "api/courierDeliveryhubs/GetShippmentTotalCountBasedOnDateAndRunsheetAndStatusDelivered",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dateRange",
+        "Type": "System.DateTime",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Annapurnaworld.api.Controllers.CourierDeliveryHubController",
+    "Method": "GetShippmentTotalCountBasedOnDateAndRunsheetGrandTotal",
+    "RelativePath": "api/courierDeliveryhubs/GetShippmentTotalCountBasedOnDateAndRunsheetGrandTotal",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dateRange",
+        "Type": "System.DateTime",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Annapurnaworld.api.Controllers.CourierDeliveryHubController",
+    "Method": "GetShippmentTotalCountBasedOnDateAndSheetTypePickupSheet",
+    "RelativePath": "api/courierDeliveryhubs/GetShippmentTotalCountBasedOnDateAndSheetTypePickupSheet",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dateRange",
+        "Type": "System.DateTime",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Annapurnaworld.api.Controllers.CourierDeliveryHubController",
+    "Method": "GetShippmentTotalCountBasedOnDateAndSheetTypePickupSheetGrandTotal",
+    "RelativePath": "api/courierDeliveryhubs/GetShippmentTotalCountBasedOnDateAndSheetTypePickupSheetGrandTotal",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dateRange",
+        "Type": "System.DateTime",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Annapurnaworld.api.Controllers.CourierDeliveryHubController",
+    "Method": "UploadOrderDeliveredFile",
+    "RelativePath": "api/courierDeliveryhubs/UploadOrderDeliveredFile",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "file",
+        "Type": "Microsoft.AspNetCore.Http.IFormFile",
+        "IsRequired": false
+      },
+      {
+        "Name": "dateTime",
+        "Type": "System.DateOnly",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  }
+]

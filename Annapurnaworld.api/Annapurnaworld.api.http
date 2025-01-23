@@ -1,0 +1,6 @@
+@Annapurnaworld.api_HostAddress = http://localhost:5047
+
+GET {{Annapurnaworld.api_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
