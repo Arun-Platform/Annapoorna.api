@@ -1,0 +1,36 @@
+name: Build and Test .NET Core API
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest  # You can change to windows-latest or macos-latest if needed
+
+    steps:
+      # Checkout the repository
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      # Set up .NET SDK
+      - name: Set up .NET Core
+        uses: actions/setup-dotnet@v2
+        with:
+          dotnet-version: '6.0'  # Specify the version of .NET you are using (e.g., 5.0, 6.0, etc.)
+
+      # Restore dependencies
+      - name: Restore dependencies
+        run: dotnet restore
+
+      # Build the solution
+      - name: Build the project
+        run: dotnet build --configuration Release
+
+      # Run tests
+      - name: Run tests
+        run: dotnet test --configuration Release --no-restore --verbosity normal
